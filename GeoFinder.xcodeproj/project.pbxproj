@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FE8F38F236D96AC00E628FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F38E236D96AC00E628FA /* AppDelegate.swift */; };
+		5FE8F391236D96AC00E628FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F390236D96AC00E628FA /* SceneDelegate.swift */; };
+		5FE8F393236D96AC00E628FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F392236D96AC00E628FA /* ViewController.swift */; };
+		5FE8F396236D96AC00E628FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE8F394236D96AC00E628FA /* Main.storyboard */; };
+		5FE8F399236D96AC00E628FA /* GeoFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F397236D96AC00E628FA /* GeoFinder.xcdatamodeld */; };
+		5FE8F39B236D96AE00E628FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FE8F39A236D96AE00E628FA /* Assets.xcassets */; };
+		5FE8F39E236D96AE00E628FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE8F39C236D96AE00E628FA /* LaunchScreen.storyboard */; };
+		5FE8F3A9236D96AE00E628FA /* GeoFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F3A8236D96AE00E628FA /* GeoFinderTests.swift */; };
+		5FE8F3B4236D96AF00E628FA /* GeoFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F3B3236D96AF00E628FA /* GeoFinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FE8F3A5236D96AE00E628FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FE8F383236D96AC00E628FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FE8F38A236D96AC00E628FA;
+			remoteInfo = GeoFinder;
+		};
+		5FE8F3B0236D96AF00E628FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FE8F383236D96AC00E628FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FE8F38A236D96AC00E628FA;
+			remoteInfo = GeoFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FE8F38B236D96AC00E628FA /* GeoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE8F38E236D96AC00E628FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FE8F390236D96AC00E628FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5FE8F392236D96AC00E628FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FE8F395236D96AC00E628FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FE8F398236D96AC00E628FA /* GeoFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoFinder.xcdatamodel; sourceTree = "<group>"; };
+		5FE8F39A236D96AE00E628FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FE8F39D236D96AE00E628FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FE8F39F236D96AE00E628FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FE8F3A4236D96AE00E628FA /* GeoFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE8F3A8236D96AE00E628FA /* GeoFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFinderTests.swift; sourceTree = "<group>"; };
+		5FE8F3AA236D96AE00E628FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FE8F3AF236D96AF00E628FA /* GeoFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE8F3B3236D96AF00E628FA /* GeoFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFinderUITests.swift; sourceTree = "<group>"; };
+		5FE8F3B5236D96AF00E628FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FE8F388236D96AC00E628FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE8F3A1236D96AE00E628FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE8F3AC236D96AF00E628FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FE8F382236D96AC00E628FA = {
+			isa = PBXGroup;
+			children = (
+				5FE8F38D236D96AC00E628FA /* GeoFinder */,
+				5FE8F3A7236D96AE00E628FA /* GeoFinderTests */,
+				5FE8F3B2236D96AF00E628FA /* GeoFinderUITests */,
+				5FE8F38C236D96AC00E628FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FE8F38C236D96AC00E628FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FE8F38B236D96AC00E628FA /* GeoFinder.app */,
+				5FE8F3A4236D96AE00E628FA /* GeoFinderTests.xctest */,
+				5FE8F3AF236D96AF00E628FA /* GeoFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FE8F38D236D96AC00E628FA /* GeoFinder */ = {
+			isa = PBXGroup;
+			children = (
+				5FE8F38E236D96AC00E628FA /* AppDelegate.swift */,
+				5FE8F390236D96AC00E628FA /* SceneDelegate.swift */,
+				5FE8F392236D96AC00E628FA /* ViewController.swift */,
+				5FE8F394236D96AC00E628FA /* Main.storyboard */,
+				5FE8F39A236D96AE00E628FA /* Assets.xcassets */,
+				5FE8F39C236D96AE00E628FA /* LaunchScreen.storyboard */,
+				5FE8F39F236D96AE00E628FA /* Info.plist */,
+				5FE8F397236D96AC00E628FA /* GeoFinder.xcdatamodeld */,
+			);
+			path = GeoFinder;
+			sourceTree = "<group>";
+		};
+		5FE8F3A7236D96AE00E628FA /* GeoFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FE8F3A8236D96AE00E628FA /* GeoFinderTests.swift */,
+				5FE8F3AA236D96AE00E628FA /* Info.plist */,
+			);
+			path = GeoFinderTests;
+			sourceTree = "<group>";
+		};
+		5FE8F3B2236D96AF00E628FA /* GeoFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FE8F3B3236D96AF00E628FA /* GeoFinderUITests.swift */,
+				5FE8F3B5236D96AF00E628FA /* Info.plist */,
+			);
+			path = GeoFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FE8F38A236D96AC00E628FA /* GeoFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FE8F3B8236D96AF00E628FA /* Build configuration list for PBXNativeTarget "GeoFinder" */;
+			buildPhases = (
+				5FE8F387236D96AC00E628FA /* Sources */,
+				5FE8F388236D96AC00E628FA /* Frameworks */,
+				5FE8F389236D96AC00E628FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoFinder;
+			productName = GeoFinder;
+			productReference = 5FE8F38B236D96AC00E628FA /* GeoFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FE8F3A3236D96AE00E628FA /* GeoFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FE8F3BB236D96AF00E628FA /* Build configuration list for PBXNativeTarget "GeoFinderTests" */;
+			buildPhases = (
+				5FE8F3A0236D96AE00E628FA /* Sources */,
+				5FE8F3A1236D96AE00E628FA /* Frameworks */,
+				5FE8F3A2236D96AE00E628FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FE8F3A6236D96AE00E628FA /* PBXTargetDependency */,
+			);
+			name = GeoFinderTests;
+			productName = GeoFinderTests;
+			productReference = 5FE8F3A4236D96AE00E628FA /* GeoFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FE8F3AE236D96AF00E628FA /* GeoFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FE8F3BE236D96AF00E628FA /* Build configuration list for PBXNativeTarget "GeoFinderUITests" */;
+			buildPhases = (
+				5FE8F3AB236D96AF00E628FA /* Sources */,
+				5FE8F3AC236D96AF00E628FA /* Frameworks */,
+				5FE8F3AD236D96AF00E628FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FE8F3B1236D96AF00E628FA /* PBXTargetDependency */,
+			);
+			name = GeoFinderUITests;
+			productName = GeoFinderUITests;
+			productReference = 5FE8F3AF236D96AF00E628FA /* GeoFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FE8F383236D96AC00E628FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Fabien HOARAU";
+				TargetAttributes = {
+					5FE8F38A236D96AC00E628FA = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					5FE8F3A3236D96AE00E628FA = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 5FE8F38A236D96AC00E628FA;
+					};
+					5FE8F3AE236D96AF00E628FA = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 5FE8F38A236D96AC00E628FA;
+					};
+				};
+			};
+			buildConfigurationList = 5FE8F386236D96AC00E628FA /* Build configuration list for PBXProject "GeoFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FE8F382236D96AC00E628FA;
+			productRefGroup = 5FE8F38C236D96AC00E628FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FE8F38A236D96AC00E628FA /* GeoFinder */,
+				5FE8F3A3236D96AE00E628FA /* GeoFinderTests */,
+				5FE8F3AE236D96AF00E628FA /* GeoFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FE8F389236D96AC00E628FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE8F39E236D96AE00E628FA /* LaunchScreen.storyboard in Resources */,
+				5FE8F39B236D96AE00E628FA /* Assets.xcassets in Resources */,
+				5FE8F396236D96AC00E628FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE8F3A2236D96AE00E628FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE8F3AD236D96AF00E628FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FE8F387236D96AC00E628FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE8F393236D96AC00E628FA /* ViewController.swift in Sources */,
+				5FE8F399236D96AC00E628FA /* GeoFinder.xcdatamodeld in Sources */,
+				5FE8F38F236D96AC00E628FA /* AppDelegate.swift in Sources */,
+				5FE8F391236D96AC00E628FA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE8F3A0236D96AE00E628FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE8F3A9236D96AE00E628FA /* GeoFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE8F3AB236D96AF00E628FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE8F3B4236D96AF00E628FA /* GeoFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FE8F3A6236D96AE00E628FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FE8F38A236D96AC00E628FA /* GeoFinder */;
+			targetProxy = 5FE8F3A5236D96AE00E628FA /* PBXContainerItemProxy */;
+		};
+		5FE8F3B1236D96AF00E628FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FE8F38A236D96AC00E628FA /* GeoFinder */;
+			targetProxy = 5FE8F3B0236D96AF00E628FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FE8F394236D96AC00E628FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FE8F395236D96AC00E628FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FE8F39C236D96AE00E628FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FE8F39D236D96AE00E628FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FE8F3B6236D96AF00E628FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FE8F3B7236D96AF00E628FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FE8F3B9236D96AF00E628FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9Y82U8N7;
+				INFOPLIST_FILE = GeoFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabien.GeoFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FE8F3BA236D96AF00E628FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9Y82U8N7;
+				INFOPLIST_FILE = GeoFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabien.GeoFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5FE8F3BC236D96AF00E628FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9Y82U8N7;
+				INFOPLIST_FILE = GeoFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabien.GeoFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoFinder.app/GeoFinder";
+			};
+			name = Debug;
+		};
+		5FE8F3BD236D96AF00E628FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9Y82U8N7;
+				INFOPLIST_FILE = GeoFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabien.GeoFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoFinder.app/GeoFinder";
+			};
+			name = Release;
+		};
+		5FE8F3BF236D96AF00E628FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9Y82U8N7;
+				INFOPLIST_FILE = GeoFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabien.GeoFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoFinder;
+			};
+			name = Debug;
+		};
+		5FE8F3C0236D96AF00E628FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9Y82U8N7;
+				INFOPLIST_FILE = GeoFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabien.GeoFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FE8F386236D96AC00E628FA /* Build configuration list for PBXProject "GeoFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE8F3B6236D96AF00E628FA /* Debug */,
+				5FE8F3B7236D96AF00E628FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FE8F3B8236D96AF00E628FA /* Build configuration list for PBXNativeTarget "GeoFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE8F3B9236D96AF00E628FA /* Debug */,
+				5FE8F3BA236D96AF00E628FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FE8F3BB236D96AF00E628FA /* Build configuration list for PBXNativeTarget "GeoFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE8F3BC236D96AF00E628FA /* Debug */,
+				5FE8F3BD236D96AF00E628FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FE8F3BE236D96AF00E628FA /* Build configuration list for PBXNativeTarget "GeoFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE8F3BF236D96AF00E628FA /* Debug */,
+				5FE8F3C0236D96AF00E628FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5FE8F397236D96AC00E628FA /* GeoFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5FE8F398236D96AC00E628FA /* GeoFinder.xcdatamodel */,
+			);
+			currentVersion = 5FE8F398236D96AC00E628FA /* GeoFinder.xcdatamodel */;
+			path = GeoFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5FE8F383236D96AC00E628FA /* Project object */;
+}
