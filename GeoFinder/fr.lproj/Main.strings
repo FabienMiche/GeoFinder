@@ -1,0 +1,30 @@
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "BBp-QQ-eb4"; */
+"BBp-QQ-eb4.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "DCE-Oh-fIb"; */
+"DCE-Oh-fIb.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Standard"; ObjectID = "Gc9-K9-oEa"; */
+"Gc9-K9-oEa.title" = "Standard";
+
+/* Class = "UILabel"; text = "Geo Finder"; ObjectID = "JDF-hp-trG"; */
+"JDF-hp-trG.text" = "Geo Finder";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "KSW-Q4-4hS"; */
+"KSW-Q4-4hS.normalTitle" = "Démarrer";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Phm-13-2O6"; */
+"Phm-13-2O6.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "Annotation"; ObjectID = "Z3P-3i-w9P"; */
+"Z3P-3i-w9P.placeholder" = "Annotation";
+
+/* Class = "UIBarButtonItem"; title = "WAI"; ObjectID = "ZQ3-0e-3WH"; */
+"ZQ3-0e-3WH.title" = "Où suis-je";
+
+/* Class = "UIBarButtonItem"; title = "Satellite"; ObjectID = "gJ3-bN-nvB"; */
+"gJ3-bN-nvB.title" = "Satellite";
+
+/* Class = "UIBarButtonItem"; title = "Hyrbid"; ObjectID = "oKY-zA-7H1"; */
+"oKY-zA-7H1.title" = "Hyrbid";

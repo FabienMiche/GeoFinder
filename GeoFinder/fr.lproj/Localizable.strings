@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  GeoFinder
+
+  Created by Fabien HOARAU on 11/3/19.
+  Copyright © 2019 Fabien HOARAU. All rights reserved.
+*/
+
+/* Error */
+"error" = "Erreur";
+"location not enabled" = "Services de location indisponibles";
+"unknown" = "Position actuelle inconnue";
+"failed to update map" = "Echec mise-à-jour carte";
+
+/* Label */
+"location" = "Position: ";
+"north" = "N";
+"south" = "S";
+"east" = "E";
+"west" = "O";
+
+
+/* TabBar*/
+"map" = "Carte";
+"list" = "Liste";
+"audio" = "Audio";
