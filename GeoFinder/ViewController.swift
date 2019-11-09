@@ -7,16 +7,32 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
 
-    
+    var alertAudio = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //**** Chargement des fichiers sons ****
+        if let soundFilePath = Bundle.main.path(forResource: "alert", ofType: "mp3") {
+            let fileURL = URL(fileURLWithPath: soundFilePath)
+            do {
+                try alertAudio = AVAudioPlayer(contentsOf: fileURL)
+                alertAudio.delegate = self
+            } catch {
+                print("Erreur :",  error)
+            }
+        }
+        //********
     }
     
+    
+    //*************
+    //Fonction pour la détection du mouvement du téléphone
+    //Quand on secoue l'appareil, les fonctions suivantes sont appelées
     override func becomeFirstResponder() -> Bool {
         return true
     }
@@ -29,8 +45,11 @@ class ViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
+            alertAudio.play()
         }
     }
+    
+    //*************
 
 }
 

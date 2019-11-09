@@ -11,6 +11,8 @@ import UIKit
 var geoList = ["geo1", "geo2", "geo3"]
 var geoLatitude = [2.0, 4.0, 5.5]
 var geoLongitude = [1.0, 2.0, 3.0]
+var geoProxiLatitude = [-21.260]
+var geoProxiLongitude = [55.361]
 var geoInfo = ["Description de la geo1", "Description de la geo2", "Description de la geo3"]
 var myIndex = 0
 
