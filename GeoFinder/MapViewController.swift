@@ -11,6 +11,8 @@ import MapKit
 import CoreLocation
 import AVFoundation
 
+
+
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, AVAudioPlayerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
@@ -23,11 +25,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     var alertAudio = AVAudioPlayer()
     var alertProximiteAudio = AVAudioPlayer()
-    //private var showingAlert = false
+    
     
     //**** ZONE DE PROXIMITÉ ****
     //On définit nos zones de proximités ici
-    let region = CLCircularRegion(center: CLLocationCoordinate2DMake(-33.8634, 151.211), radius: 100000.0, identifier: "Sydney")
+    let geo = CLCircularRegion(center: CLLocationCoordinate2DMake(geoProxiLatitude[0], geoProxiLongitude[0]), radius: 100.0, identifier: "Geo1")
+    let geo2 = CLCircularRegion(center: CLLocationCoordinate2DMake(geoProxiLatitude[1], geoProxiLongitude[1]), radius: 100.0, identifier: "Geo2")
+    let geo3 = CLCircularRegion(center: CLLocationCoordinate2DMake(geoProxiLatitude[2], geoProxiLongitude[2]), radius: 100.0, identifier: "Geo3")
+    
+    
     
     //**** TAB BAR ****
     //On appel notre constructeur grâche la méthode init
@@ -49,7 +55,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             
             //locationManager.requestWhenInUseAuthorization()
             locationManager.requestAlwaysAuthorization()
-            locationManager.startMonitoring(for: region)    //Pour la zone de proximité
+            //locationManager.startMonitoring(for: region)    //Pour la zone de proximité
+            locationManager.startMonitoring(for: geo)      //Pour la zone de la geocache
+            
             locationManager.startUpdatingLocation()
             
             mapView.showsUserLocation = true
@@ -63,6 +71,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
         
         //**** Chargement des fichiers sons ****
+        //Son : Alerte de proximité
         if let soundFilePath = Bundle.main.path(forResource: "alertProximité", ofType: "wav") {
             let fileURL = URL(fileURLWithPath: soundFilePath)
             do {
@@ -75,6 +84,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             }
         }
         
+        //Son : alert lorsqu'on secoue l'appareil
         if let soundFilePath = Bundle.main.path(forResource: "alert", ofType: "mp3") {
             let fileURL = URL(fileURLWithPath: soundFilePath)
             do {
@@ -95,31 +105,35 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         print("Locations = \(locValue.latitude) \(locValue.longitude)")
-        latitudeText.text = String(locValue.latitude)
-        longitudeText.text = String(locValue.longitude)
+        latitudeText.text = String(format: "%.3f",locValue.latitude)
+        longitudeText.text = String(format: "%.3f",locValue.longitude)
     }
     //********
     
-    //**** Alerte lorsqu'on rentre dans une zone de proximité ****
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        print("Entrée dans la zone %@", region)
-        let alertController = UIAlertController(title: "Attention", message: "Entrée dans la zone ", preferredStyle: .alert)
+    
+    //**** Alerte de proximité des geocaches ****
+    //ENTRÉE GEO1
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion geo1: CLRegion) {
+        print("Entrée dans la zone de %@", geo1)
+        let alertController = UIAlertController(title: NSLocalizedString("alert", comment: "Zone"), message: NSLocalizedString("messageEnter", comment: "Error"), preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default))
         self.present(alertController, animated: true, completion: nil)
         alertProximiteAudio.play()
     }
-    //********
+
     
-    //**** Alerte lorsqu'on sort dans une zone de proximité ****
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        print("Sortie de la zone %@", region)
-        let alertController = UIAlertController(title: "Attention", message: "Sortie de la zone ", preferredStyle: .alert)
+    //SORTIE GEO1
+    func locationManager(_ manager: CLLocationManager, didExitRegion geo1: CLRegion) {
+        print("Sortie de la zone %@", geo1)
+        let alertController = UIAlertController(title: NSLocalizedString("messageExit", comment: "Zone"), message: "Vous sortez de la zone ! ", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default))
         self.present(alertController, animated: true, completion: nil)
         alertProximiteAudio.play()
     }
-    //********
     
+    
+    //********
     
     @IBAction func whereAmI(_ sender: Any) {
         let userLocation = mapView.userLocation

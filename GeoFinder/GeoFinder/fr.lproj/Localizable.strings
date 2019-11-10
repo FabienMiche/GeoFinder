@@ -20,7 +20,19 @@
 "west" = "O";
 
 
-/* TabBar*/
+/* TabBar */
 "map" = "Carte";
 "list" = "Liste";
 "audio" = "Audio";
+
+/* Photo */
+"photoSource" = "Ressource photo";
+"message" = "Choissisez une source";
+"camera" = "Appareil photo";
+"library" = "Bibliothèque";
+"cancel" = "Annuler";
+
+/* Zone */
+"alert" = "Attention";
+"messageEnter" = "Geocache à proximité !";
+"messageExit" = "Vous sortez de la zone !";

@@ -70,5 +70,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We want proof that you have found the objects</string>
+	<key>NSCameraUsageDescription</key>
+	<string>You need a way to prove it </string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>upheavtt.ttf</string>
+	</array>
 </dict>
 </plist>

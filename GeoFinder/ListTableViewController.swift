@@ -8,12 +8,14 @@
 
 import UIKit
 
-var geoList = ["geo1", "geo2", "geo3"]
-var geoLatitude = [2.0, 4.0, 5.5]
-var geoLongitude = [1.0, 2.0, 3.0]
-var geoProxiLatitude = [-21.260]
-var geoProxiLongitude = [55.361]
-var geoInfo = ["Description de la geo1", "Description de la geo2", "Description de la geo3"]
+var geoList = ["Geo de chez moi", "Geo du PTU", "Geo de la fac"]
+var geoLatitude = [-21.260, -20.905, -20.901]
+var geoLongitude = [55.361, 55.500, 55.483]
+var geoProxiLatitude = [-21.260, -20.905, -20.901]
+var geoProxiLongitude = [55.361, 55.500, 55.483]
+var geoInfo = ["On est bien chez soi ",
+               "L'endroit préféré des licences et master d'informatique",
+               "Le VRAI endroit préféré des des licences et master d'informatiques (ça dépend pour qui, en tout cas il y a plus de vie là-bas)"]
 var myIndex = 0
 
 
