@@ -1,9 +1,33 @@
 
-/* Class = "UITabBarItem"; title = "Item"; ObjectID = "BBp-QQ-eb4"; */
-"BBp-QQ-eb4.title" = "Item";
+/* Class = "UILabel"; text = "Longitude :"; ObjectID = "0PD-7A-IHI"; */
+"0PD-7A-IHI.text" = "Longitude :";
+
+/* Class = "UILabel"; text = "Proximity zone"; ObjectID = "0hZ-56-IEZ"; */
+"0hZ-56-IEZ.text" = "Proximity zone";
+
+/* Class = "UILabel"; text = "Latitude :"; ObjectID = "0ym-qC-Qgp"; */
+"0ym-qC-Qgp.text" = "Latitude :";
+
+/* Class = "UILabel"; text = "Latitude :"; ObjectID = "9yX-Fr-4Sy"; */
+"9yX-Fr-4Sy.text" = "Latitude :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ApU-40-Ng1"; */
+"ApU-40-Ng1.text" = "Label";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "DCE-Oh-fIb"; */
 "DCE-Oh-fIb.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "E8K-J5-dhK"; */
+"E8K-J5-dhK.title" = "Item";
+
+/* Class = "UILabel"; text = "Longitude :"; ObjectID = "Efc-DU-6PI"; */
+"Efc-DU-6PI.text" = "Longitude :";
+
+/* Class = "UIButton"; normalTitle = "Import image"; ObjectID = "Euh-eS-ekx"; */
+"Euh-eS-ekx.normalTitle" = "Importer une image";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Fb4-za-SWU"; */
+"Fb4-za-SWU.text" = "Label";
 
 /* Class = "UIBarButtonItem"; title = "Standard"; ObjectID = "Gc9-K9-oEa"; */
 "Gc9-K9-oEa.title" = "Standard";
@@ -11,20 +35,47 @@
 /* Class = "UILabel"; text = "Geo Finder"; ObjectID = "JDF-hp-trG"; */
 "JDF-hp-trG.text" = "Geo Finder";
 
+/* Class = "UILabel"; text = "Description:"; ObjectID = "JWc-2U-uNw"; */
+"JWc-2U-uNw.text" = "Description:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "K9Y-Ol-uXc"; */
+"K9Y-Ol-uXc.text" = "Label";
+
 /* Class = "UIButton"; normalTitle = "Start"; ObjectID = "KSW-Q4-4hS"; */
 "KSW-Q4-4hS.normalTitle" = "Démarrer";
+
+/* Class = "UILabel"; text = "Longitude :"; ObjectID = "ODo-3e-Ocz"; */
+"ODo-3e-Ocz.text" = "Longitude :";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "Phm-13-2O6"; */
 "Phm-13-2O6.title" = "Item";
 
-/* Class = "UITextField"; placeholder = "Annotation"; ObjectID = "Z3P-3i-w9P"; */
-"Z3P-3i-w9P.placeholder" = "Annotation";
+/* Class = "UILabel"; text = "Latitude :"; ObjectID = "QjQ-EL-5Xj"; */
+"QjQ-EL-5Xj.text" = "Latitude :";
+
+/* Class = "UILabel"; text = "Titre"; ObjectID = "TAn-9v-Eu9"; */
+"TAn-9v-Eu9.text" = "Titre";
 
 /* Class = "UIBarButtonItem"; title = "WAI"; ObjectID = "ZQ3-0e-3WH"; */
-"ZQ3-0e-3WH.title" = "Où suis-je";
+"ZQ3-0e-3WH.title" = "WAI";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ahL-hW-Txv"; */
+"ahL-hW-Txv.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bY9-nj-VP6"; */
+"bY9-nj-VP6.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ckC-R8-nGn"; */
+"ckC-R8-nGn.text" = "Label";
+
+/* Class = "UILabel"; text = "Photo :"; ObjectID = "dt6-Vu-CoP"; */
+"dt6-Vu-CoP.text" = "Photo :";
 
 /* Class = "UIBarButtonItem"; title = "Satellite"; ObjectID = "gJ3-bN-nvB"; */
 "gJ3-bN-nvB.title" = "Satellite";
 
-/* Class = "UIBarButtonItem"; title = "Hyrbid"; ObjectID = "oKY-zA-7H1"; */
+/* Class = "UIBarButtonItem"; title = "Hybrid"; ObjectID = "oKY-zA-7H1"; */
 "oKY-zA-7H1.title" = "Hybrid";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vVr-9q-WxS"; */
+"vVr-9q-WxS.text" = "Label";
