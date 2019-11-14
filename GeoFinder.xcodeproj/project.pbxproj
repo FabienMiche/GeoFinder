@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F229DB92379EFD600F34A25 /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F229DB82379EFD600F34A25 /* start.wav */; };
 		5F32DFAF23703B9200C65FAD /* AffichageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32DFAE23703B9200C65FAD /* AffichageList.swift */; };
+		5F33A916237C92A7003D6A9B /* Liste.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F33A915237C92A7003D6A9B /* Liste.png */; };
 		5F44E9B92377FE20009FB1A0 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F44E9B82377FE20009FB1A0 /* alert.mp3 */; };
 		5F44E9BC23784A0B009FB1A0 /* upheavtt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F44E9BB237849E8009FB1A0 /* upheavtt.ttf */; };
-		5F525196236F14DD0013EA5E /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F525195236F14DD0013EA5E /* MyAnnotation.swift */; };
 		5F52519F236F165B0013EA5E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F52519E236F165B0013EA5E /* MapKit.framework */; };
 		5F5251A1236F16610013EA5E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5251A0236F16610013EA5E /* CoreLocation.framework */; };
 		5F6CB82C2376CD1C002A420C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6CB82B2376CD1C002A420C /* AVFoundation.framework */; };
+		5F786AFE237B34E000BBD615 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F786AFD237B34E000BBD615 /* CheckViewController.swift */; };
 		5F7ACA07236F5008001296D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F7ACA05236F5008001296D3 /* Localizable.strings */; };
 		5F7ACA0C236F52C7001296D3 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7ACA0B236F52C7001296D3 /* ListTableViewController.swift */; };
 		5FE8F38F236D96AC00E628FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F38E236D96AC00E628FA /* AppDelegate.swift */; };
@@ -27,6 +29,7 @@
 		5FE8F3B4236D96AF00E628FA /* GeoFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F3B3236D96AF00E628FA /* GeoFinderUITests.swift */; };
 		5FE8F3C2236DF78A00E628FA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F3C1236DF78A00E628FA /* MapViewController.swift */; };
 		5FE8F3C6236DF90C00E628FA /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8F3C5236DF90C00E628FA /* AudioViewController.swift */; };
+		5FEB47EA2379DE0800686F71 /* Accueil.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB47E92379DE0800686F71 /* Accueil.PNG */; };
 		5FFFC6FB23774B6200C8470E /* alertProximité.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5FFFC6FA23774B6200C8470E /* alertProximité.wav */; };
 /* End PBXBuildFile section */
 
@@ -48,14 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F229DB82379EFD600F34A25 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = start.wav; path = ../../../Ressources/sounds/start.wav; sourceTree = "<group>"; };
 		5F32DFAE23703B9200C65FAD /* AffichageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffichageList.swift; sourceTree = "<group>"; };
+		5F33A915237C92A7003D6A9B /* Liste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Liste.png; path = ../../../Ressources/GUI/Liste.png; sourceTree = "<group>"; };
+		5F33A918237C96CC003D6A9B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		5F44E9B82377FE20009FB1A0 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alert.mp3; path = ../../../Ressources/sounds/alert.mp3; sourceTree = "<group>"; };
 		5F44E9BB237849E8009FB1A0 /* upheavtt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = upheavtt.ttf; path = ../../../../../../../../../Library/Fonts/upheavtt.ttf; sourceTree = "<group>"; };
-		5F44E9BE23788878009FB1A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
-		5F525195236F14DD0013EA5E /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		5F52519E236F165B0013EA5E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5F5251A0236F16610013EA5E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5F6CB82B2376CD1C002A420C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5F786AFD237B34E000BBD615 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		5F7ACA06236F5008001296D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = GeoFinder/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F7ACA09236F5032001296D3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5F7ACA0A236F5032001296D3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = GeoFinder/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 		5FE8F3B5236D96AF00E628FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE8F3C1236DF78A00E628FA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5FE8F3C5236DF90C00E628FA /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		5FEB47E92379DE0800686F71 /* Accueil.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Accueil.PNG; path = ../../../Ressources/GUI/Accueil.PNG; sourceTree = "<group>"; };
 		5FFFC6FA23774B6200C8470E /* alertProximité.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "alertProximité.wav"; path = "../../../Ressources/sounds/alertProximité.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +135,7 @@
 		5F6CB82D2376CD32002A420C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				5F229DB82379EFD600F34A25 /* start.wav */,
 				5FFFC6FA23774B6200C8470E /* alertProximité.wav */,
 				5F44E9B82377FE20009FB1A0 /* alert.mp3 */,
 			);
@@ -171,7 +178,8 @@
 				5F7ACA0B236F52C7001296D3 /* ListTableViewController.swift */,
 				5F32DFAE23703B9200C65FAD /* AffichageList.swift */,
 				5FE8F3C5236DF90C00E628FA /* AudioViewController.swift */,
-				5F525195236F14DD0013EA5E /* MyAnnotation.swift */,
+				5F786AFD237B34E000BBD615 /* CheckViewController.swift */,
+				5FEB47E82379DDDD00686F71 /* Images */,
 				5F6CB82D2376CD32002A420C /* Sounds */,
 				5F44E9BA237849BA009FB1A0 /* Fonts */,
 				5F7ACA05236F5008001296D3 /* Localizable.strings */,
@@ -195,6 +203,15 @@
 				5FE8F3B5236D96AF00E628FA /* Info.plist */,
 			);
 			path = GeoFinderUITests;
+			sourceTree = "<group>";
+		};
+		5FEB47E82379DDDD00686F71 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5F33A915237C92A7003D6A9B /* Liste.png */,
+				5FEB47E92379DE0800686F71 /* Accueil.PNG */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FE8F39E236D96AE00E628FA /* LaunchScreen.storyboard in Resources */,
+				5F229DB92379EFD600F34A25 /* start.wav in Resources */,
 				5F7ACA07236F5008001296D3 /* Localizable.strings in Resources */,
 				5FE8F39B236D96AE00E628FA /* Assets.xcassets in Resources */,
 				5FFFC6FB23774B6200C8470E /* alertProximité.wav in Resources */,
+				5FEB47EA2379DE0800686F71 /* Accueil.PNG in Resources */,
 				5FE8F396236D96AC00E628FA /* Main.storyboard in Resources */,
+				5F33A916237C92A7003D6A9B /* Liste.png in Resources */,
 				5F44E9B92377FE20009FB1A0 /* alert.mp3 in Resources */,
 				5F44E9BC23784A0B009FB1A0 /* upheavtt.ttf in Resources */,
 			);
@@ -339,7 +359,7 @@
 				5F7ACA0C236F52C7001296D3 /* ListTableViewController.swift in Sources */,
 				5FE8F3C2236DF78A00E628FA /* MapViewController.swift in Sources */,
 				5FE8F3C6236DF90C00E628FA /* AudioViewController.swift in Sources */,
-				5F525196236F14DD0013EA5E /* MyAnnotation.swift in Sources */,
+				5F786AFE237B34E000BBD615 /* CheckViewController.swift in Sources */,
 				5F32DFAF23703B9200C65FAD /* AffichageList.swift in Sources */,
 				5FE8F391236D96AC00E628FA /* SceneDelegate.swift in Sources */,
 			);
@@ -390,7 +410,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5FE8F395236D96AC00E628FA /* Base */,
-				5F44E9BE23788878009FB1A0 /* fr */,
+				5F33A918237C96CC003D6A9B /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -24,6 +24,7 @@
 "map" = "Map";
 "list" = "List";
 "audio" = "Audio";
+"check" = "Check";
 
 /* Photo */
 "photoSource" = "Photo source";
@@ -36,3 +37,7 @@
 "alert" = "Caution";
 "messageEnter" = "Geocache detected !";
 "messageExit" = "You're leaving the zone !";
+
+/* Check */
+"title" = "Check geocache";
+"label" = "Find a geocache ? Make sure to enter the code below to prove it !";

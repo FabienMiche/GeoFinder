@@ -12,16 +12,29 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     var alertAudio = AVAudioPlayer()
+    var startAudio = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //**** Chargement des fichiers sons ****
+        //Son d'alerte
         if let soundFilePath = Bundle.main.path(forResource: "alert", ofType: "mp3") {
             let fileURL = URL(fileURLWithPath: soundFilePath)
             do {
                 try alertAudio = AVAudioPlayer(contentsOf: fileURL)
                 alertAudio.delegate = self
+            } catch {
+                print("Erreur :",  error)
+            }
+        }
+        
+        //Son bouton démarrer
+        if let soundFilePath = Bundle.main.path(forResource: "start", ofType: "wav") {
+            let fileURL = URL(fileURLWithPath: soundFilePath)
+            do {
+                try startAudio = AVAudioPlayer(contentsOf: fileURL)
+                startAudio.delegate = self
             } catch {
                 print("Erreur :",  error)
             }
@@ -50,6 +63,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     //*************
+    @IBAction func startBtn(_ sender: Any) {
+        startAudio.play()
+    }
+    
+    
+    
 
 }
 

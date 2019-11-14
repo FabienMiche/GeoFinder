@@ -126,7 +126,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     //SORTIE GEO1
     func locationManager(_ manager: CLLocationManager, didExitRegion geo1: CLRegion) {
         print("Sortie de la zone %@", geo1)
-        let alertController = UIAlertController(title: NSLocalizedString("messageExit", comment: "Zone"), message: "Vous sortez de la zone ! ", preferredStyle: .alert)
+        let alertController = UIAlertController(title: NSLocalizedString("alert", comment: "Zone"), message: NSLocalizedString("messageExit", comment: "Zone"), preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default))
         self.present(alertController, animated: true, completion: nil)
         alertProximiteAudio.play()

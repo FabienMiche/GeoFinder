@@ -24,6 +24,7 @@
 "map" = "Carte";
 "list" = "Liste";
 "audio" = "Audio";
+"check" = "Valider";
 
 /* Photo */
 "photoSource" = "Ressource photo";
@@ -36,3 +37,7 @@
 "alert" = "Attention";
 "messageEnter" = "Geocache à proximité !";
 "messageExit" = "Vous sortez de la zone !";
+
+/* Check */
+"title" = "Verification geocache";
+"label" = "Vous avez trouvez une geocache ? Pour en être sûr, entrez le code ci-dessous !";

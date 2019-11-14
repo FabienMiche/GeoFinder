@@ -3,7 +3,7 @@
 "0PD-7A-IHI.text" = "Longitude :";
 
 /* Class = "UILabel"; text = "Proximity zone"; ObjectID = "0hZ-56-IEZ"; */
-"0hZ-56-IEZ.text" = "Proximity zone";
+"0hZ-56-IEZ.text" = "Zone de proximité";
 
 /* Class = "UILabel"; text = "Latitude :"; ObjectID = "0ym-qC-Qgp"; */
 "0ym-qC-Qgp.text" = "Latitude :";
@@ -20,6 +20,9 @@
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "E8K-J5-dhK"; */
 "E8K-J5-dhK.title" = "Item";
 
+/* Class = "UILabel"; text = "Find a geocache ? Make sure to enter the code below to prove it !"; ObjectID = "Ebl-eH-62t"; */
+"Ebl-eH-62t.text" = "Find a geocache ? Make sure to enter the code below to prove it !";
+
 /* Class = "UILabel"; text = "Longitude :"; ObjectID = "Efc-DU-6PI"; */
 "Efc-DU-6PI.text" = "Longitude :";
 
@@ -32,8 +35,8 @@
 /* Class = "UIBarButtonItem"; title = "Standard"; ObjectID = "Gc9-K9-oEa"; */
 "Gc9-K9-oEa.title" = "Standard";
 
-/* Class = "UILabel"; text = "Geo Finder"; ObjectID = "JDF-hp-trG"; */
-"JDF-hp-trG.text" = "Geo Finder";
+/* Class = "UIButton"; normalTitle = "???"; ObjectID = "J1C-qk-4hm"; */
+"J1C-qk-4hm.normalTitle" = "???";
 
 /* Class = "UILabel"; text = "Description:"; ObjectID = "JWc-2U-uNw"; */
 "JWc-2U-uNw.text" = "Description:";
@@ -56,8 +59,11 @@
 /* Class = "UILabel"; text = "Titre"; ObjectID = "TAn-9v-Eu9"; */
 "TAn-9v-Eu9.text" = "Titre";
 
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Y5e-jU-8Ad"; */
+"Y5e-jU-8Ad.title" = "Item";
+
 /* Class = "UIBarButtonItem"; title = "WAI"; ObjectID = "ZQ3-0e-3WH"; */
-"ZQ3-0e-3WH.title" = "WAI";
+"ZQ3-0e-3WH.title" = "Où-suis-je";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "ahL-hW-Txv"; */
 "ahL-hW-Txv.text" = "Label";
@@ -71,8 +77,14 @@
 /* Class = "UILabel"; text = "Photo :"; ObjectID = "dt6-Vu-CoP"; */
 "dt6-Vu-CoP.text" = "Photo :";
 
+/* Class = "UILabel"; text = "Check geocache "; ObjectID = "fVc-3T-D3f"; */
+"fVc-3T-D3f.text" = "Check geocache ";
+
 /* Class = "UIBarButtonItem"; title = "Satellite"; ObjectID = "gJ3-bN-nvB"; */
 "gJ3-bN-nvB.title" = "Satellite";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "hfs-G3-XCf"; */
+"hfs-G3-XCf.normalTitle" = "Valider";
 
 /* Class = "UIBarButtonItem"; title = "Hybrid"; ObjectID = "oKY-zA-7H1"; */
 "oKY-zA-7H1.title" = "Hybrid";

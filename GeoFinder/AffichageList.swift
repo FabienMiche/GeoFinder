@@ -29,7 +29,8 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
         geoLat.text = String(geoLatitude[myIndex])
         geoLong.text = String(geoLongitude[myIndex])
         geoDescription.text = geoInfo[myIndex]
-        
+        geoProxLat.text = String(geoProxiLatitude[myIndex])
+        geoProxLong.text = String(geoProxiLongitude[myIndex])
         geoDescription.numberOfLines = 0
         geoDescription.sizeToFit()
     }
