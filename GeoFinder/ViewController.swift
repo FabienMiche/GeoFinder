@@ -14,6 +14,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var alertAudio = AVAudioPlayer()
     var startAudio = AVAudioPlayer()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -53,15 +55,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake
         {
+            /*
             let alertController = UIAlertController(title: nil, message:
                 "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
+            */
+            performSegue(withIdentifier: "menuSeg", sender: self)
             alertAudio.play()
+
+            
         }
     }
-    
+
     //*************
     @IBAction func startBtn(_ sender: Any) {
         startAudio.play()

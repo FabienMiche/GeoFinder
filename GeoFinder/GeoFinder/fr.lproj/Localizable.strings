@@ -41,3 +41,10 @@
 /* Check */
 "title" = "Verification geocache";
 "label" = "Vous avez trouvez une geocache ? Pour en être sûr, entrez le code ci-dessous !";
+
+/* Help */
+"title" = "Zone d'aide";
+"text" = "Vous ne trouvez pas la geocache ? Veuillez le signaler ci-dessous";
+"mess1" = "Erreur ! veuillez entrer un message !";
+"mess2" = "Erreur ! veuillez entrer un message plus long ";
+"mess3" = "Votre message a bien été envoyé, nous vous aiderons dans les prochaines minutes";

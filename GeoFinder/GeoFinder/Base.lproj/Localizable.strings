@@ -41,3 +41,11 @@
 /* Check */
 "title" = "Check geocache";
 "label" = "Find a geocache ? Make sure to enter the code below to prove it !";
+
+/* Help */
+"title" = "Help zone";
+"text" = "Can't find a geocache ? Make sure to report it below";
+"mess1" = "Error ! Please enter a message !";
+"mess2" = "Error ! Please enter a longer message !";
+"mess3" = "Your message has been sended, we will help you soon !";
+

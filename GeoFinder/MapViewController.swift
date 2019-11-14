@@ -183,11 +183,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake
         {
+            /*
             let alertController = UIAlertController(title: nil, message:
                 "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
+            */
+            performSegue(withIdentifier: "mapSegue", sender: self)
             alertAudio.play()
         }
     }

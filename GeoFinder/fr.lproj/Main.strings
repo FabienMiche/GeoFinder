@@ -21,7 +21,7 @@
 "E8K-J5-dhK.title" = "Item";
 
 /* Class = "UILabel"; text = "Find a geocache ? Make sure to enter the code below to prove it !"; ObjectID = "Ebl-eH-62t"; */
-"Ebl-eH-62t.text" = "Find a geocache ? Make sure to enter the code below to prove it !";
+"Ebl-eH-62t.text" = "Vous avez trouvez une geocache ? Pour en être sûr, entrez le code ci-dessous !";
 
 /* Class = "UILabel"; text = "Longitude :"; ObjectID = "Efc-DU-6PI"; */
 "Efc-DU-6PI.text" = "Longitude :";
@@ -44,8 +44,17 @@
 /* Class = "UILabel"; text = "Label"; ObjectID = "K9Y-Ol-uXc"; */
 "K9Y-Ol-uXc.text" = "Label";
 
+/* Class = "UILabel"; text = "Can't find a geocache ? Make sure to report it below  "; ObjectID = "KDq-7O-cnz"; */
+"KDq-7O-cnz.text" = "Vous ne trouvez pas la geocache ? Veuillez le signaler ci-dessous ";
+
+/* Class = "UILabel"; text = "Help zone"; ObjectID = "KG5-mL-CbL"; */
+"KG5-mL-CbL.text" = "Zone d'aide";
+
 /* Class = "UIButton"; normalTitle = "Start"; ObjectID = "KSW-Q4-4hS"; */
 "KSW-Q4-4hS.normalTitle" = "Démarrer";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "L5H-Um-iyh"; */
+"L5H-Um-iyh.normalTitle" = "Valider";
 
 /* Class = "UILabel"; text = "Longitude :"; ObjectID = "ODo-3e-Ocz"; */
 "ODo-3e-Ocz.text" = "Longitude :";
@@ -55,6 +64,9 @@
 
 /* Class = "UILabel"; text = "Latitude :"; ObjectID = "QjQ-EL-5Xj"; */
 "QjQ-EL-5Xj.text" = "Latitude :";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "QzV-Zc-b0S"; */
+"QzV-Zc-b0S.normalTitle" = "Retour";
 
 /* Class = "UILabel"; text = "Titre"; ObjectID = "TAn-9v-Eu9"; */
 "TAn-9v-Eu9.text" = "Titre";
@@ -78,7 +90,7 @@
 "dt6-Vu-CoP.text" = "Photo :";
 
 /* Class = "UILabel"; text = "Check geocache "; ObjectID = "fVc-3T-D3f"; */
-"fVc-3T-D3f.text" = "Check geocache ";
+"fVc-3T-D3f.text" = "Vérification geocache ";
 
 /* Class = "UIBarButtonItem"; title = "Satellite"; ObjectID = "gJ3-bN-nvB"; */
 "gJ3-bN-nvB.title" = "Satellite";

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class CheckViewController: UIViewController, UITextFieldDelegate {
+class CheckViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelegate {
 
     @IBOutlet weak var titleView: UILabel!
     @IBOutlet weak var label: UILabel!
@@ -17,7 +18,7 @@ class CheckViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var labelBtn: UIButton!
     
     var test = "abcd"
-    
+    var alertAudio = AVAudioPlayer()
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -32,6 +33,19 @@ class CheckViewController: UIViewController, UITextFieldDelegate {
         titleView.text = NSLocalizedString("title", comment: "Check")
         label.text = NSLocalizedString("label", comment: "Check")
         
+        //Son : alert lorsqu'on secoue l'appareil
+        if let soundFilePath = Bundle.main.path(forResource: "alert", ofType: "mp3") {
+            let fileURL = URL(fileURLWithPath: soundFilePath)
+            do {
+                try alertAudio = AVAudioPlayer(contentsOf: fileURL)
+                alertAudio.delegate = self
+                
+            } catch {
+                print("Erreur :",  error)
+                
+            }
+        }
+        //********
         // Do any additional setup after loading the view.
     }
     
@@ -62,6 +76,30 @@ class CheckViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+    //*************
+    //Fonction pour la détection du mouvement du téléphone
+    //Quand on secoue l'appareil, les fonctions suivantes sont appelées
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake
+        {
+            /*
+            let alertController = UIAlertController(title: nil, message:
+                "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+            */
+            performSegue(withIdentifier: "checkSegue", sender: self)
+            alertAudio.play()
+        }
+    }
+
+    //*************
+    
     /*
     // MARK: - Navigation
 

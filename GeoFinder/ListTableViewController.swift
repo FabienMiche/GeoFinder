@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 var geoList = ["Geo de chez moi", "Geo du PTU", "Geo de la fac"]
 var geoLatitude = [-21.260, -20.905, -20.901]
@@ -19,8 +20,10 @@ var geoInfo = ["On est bien chez soi ",
 var myIndex = 0
 
 
-class ListTableViewController: UITableViewController {
+class ListTableViewController: UITableViewController, AVAudioPlayerDelegate {
 
+    
+    var alertAudio = AVAudioPlayer()
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -33,6 +36,7 @@ class ListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return geoList.count
+        
     }
 
     
@@ -41,6 +45,20 @@ class ListTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = geoList[indexPath.row]
+        
+        //Son : alert lorsqu'on secoue l'appareil
+        if let soundFilePath = Bundle.main.path(forResource: "alert", ofType: "mp3") {
+            let fileURL = URL(fileURLWithPath: soundFilePath)
+            do {
+                try alertAudio = AVAudioPlayer(contentsOf: fileURL)
+                alertAudio.delegate = self
+                
+            } catch {
+                print("Erreur :",  error)
+                
+            }
+        }
+        //********
 
         return cell
     }
@@ -49,6 +67,34 @@ class ListTableViewController: UITableViewController {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
     }
+    
+    
+    
+    
+    
+    //*************
+    //Fonction pour la détection du mouvement du téléphone
+    //Quand on secoue l'appareil, les fonctions suivantes sont appelées
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake
+        {
+            /*
+            let alertController = UIAlertController(title: nil, message:
+                "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+            */
+            performSegue(withIdentifier: "listSegue", sender: self)
+            alertAudio.play()
+        }
+    }
+
+    //*************
 
 }
  

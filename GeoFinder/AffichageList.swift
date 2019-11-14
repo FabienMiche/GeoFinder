@@ -7,10 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 
-
-class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVAudioPlayerDelegate  {
 
     @IBOutlet weak var geoTitre: UILabel!
     @IBOutlet weak var geoLat: UILabel!
@@ -20,6 +20,8 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var geoProxLong: UILabel!
     
     @IBOutlet weak var imageView: UIImageView!
+    
+    var alertAudio = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,20 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
         geoProxLong.text = String(geoProxiLongitude[myIndex])
         geoDescription.numberOfLines = 0
         geoDescription.sizeToFit()
+        
+        //Son : alert lorsqu'on secoue l'appareil
+        if let soundFilePath = Bundle.main.path(forResource: "alert", ofType: "mp3") {
+            let fileURL = URL(fileURLWithPath: soundFilePath)
+            do {
+                try alertAudio = AVAudioPlayer(contentsOf: fileURL)
+                alertAudio.delegate = self
+                
+            } catch {
+                print("Erreur :",  error)
+                
+            }
+        }
+        //********
     }
     
     @IBAction func importBtn(_ sender: Any) {
@@ -74,6 +90,30 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
+    
+    //*************
+    //Fonction pour la détection du mouvement du téléphone
+    //Quand on secoue l'appareil, les fonctions suivantes sont appelées
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake
+        {
+            /*
+            let alertController = UIAlertController(title: nil, message:
+                "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+            */
+            performSegue(withIdentifier: "affichageSegue", sender: self)
+            alertAudio.play()
+        }
+    }
+
+    //*************
     
     /*
     // MARK: - Navigation

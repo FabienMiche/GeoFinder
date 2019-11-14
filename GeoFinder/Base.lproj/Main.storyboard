@@ -67,10 +67,71 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="iLe-UD-lWG"/>
+                    <connections>
+                        <segue destination="BGT-dz-DAe" kind="presentation" identifier="menuSeg" id="YF0-qu-YM2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="120.8" y="226.23688155922042"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="VDd-JY-Eva">
+            <objects>
+                <viewController id="BGT-dz-DAe" customClass="HelpViewController" customModule="GeoFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rYT-L6-aUY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help zone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG5-mL-CbL">
+                                <rect key="frame" x="16" y="41" width="343" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="UpheavalTT-BRK-" family="Upheaval TT (BRK)" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzV-Zc-b0S">
+                                <rect key="frame" x="42" y="522" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="UpheavalTT-BRK-" family="Upheaval TT (BRK)" pointSize="17"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="BGT-dz-DAe" eventType="touchUpInside" id="Ro3-WO-rIM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5H-Um-iyh">
+                                <rect key="frame" x="229" y="522" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="UpheavalTT-BRK-" family="Upheaval TT (BRK)" pointSize="17"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirmBtn:" destination="BGT-dz-DAe" eventType="touchUpInside" id="ZSk-R7-MKx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Can't find a geocache ? Make sure to report it below  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-7O-cnz">
+                                <rect key="frame" x="16" y="111" width="343" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="UpheavalTT-BRK-" family="Upheaval TT (BRK)" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOU-rt-QSe">
+                                <rect key="frame" x="16" y="257" width="343" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N9u-yv-UgZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="cOU-rt-QSe" id="xcE-at-Zly"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iK0-h2-Gib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="985.45727136431788"/>
         </scene>
         <!--Item-->
         <scene sceneID="WAB-Dg-TYe">
@@ -152,6 +213,7 @@
                         <outlet property="latitudeText" destination="ApU-40-Ng1" id="xjV-qJ-g5V"/>
                         <outlet property="longitudeText" destination="vVr-9q-WxS" id="h4h-UH-TVU"/>
                         <outlet property="mapView" destination="L1T-XZ-Cc1" id="rVo-nX-IBU"/>
+                        <segue destination="BGT-dz-DAe" kind="presentation" identifier="mapSegue" id="Td1-pi-cV3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XtQ-kR-jzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -222,6 +284,7 @@
                         <outlet property="label" destination="Ebl-eH-62t" id="IJS-hd-oqg"/>
                         <outlet property="textField" destination="1ah-r1-Ij1" id="trS-VS-Oe5"/>
                         <outlet property="titleView" destination="fVc-3T-D3f" id="Uxm-Bc-jsV"/>
+                        <segue destination="BGT-dz-DAe" kind="presentation" identifier="checkSegue" id="HqQ-BL-fXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oco-TN-3DB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -254,6 +317,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="E8K-J5-dhK"/>
                     <connections>
                         <segue destination="L0c-ZZ-rO3" kind="show" identifier="segue" id="s0e-hE-1ja"/>
+                        <segue destination="BGT-dz-DAe" kind="presentation" identifier="listSegue" id="z5W-QR-D5u"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMq-6D-AsW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -392,6 +456,7 @@
                         <outlet property="geoProxLong" destination="K9Y-Ol-uXc" id="3Cn-hY-e5x"/>
                         <outlet property="geoTitre" destination="TAn-9v-Eu9" id="qpv-h0-Cti"/>
                         <outlet property="imageView" destination="1B6-im-Ncn" id="2yO-Vs-9Lt"/>
+                        <segue destination="BGT-dz-DAe" kind="presentation" identifier="affichageSegue" id="kCp-8r-wpW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97Q-7M-FdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -425,4 +490,7 @@
         <image name="Accueil.PNG" width="750" height="1334"/>
         <image name="Liste.png" width="750" height="1334"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="HqQ-BL-fXr"/>
+    </inferredMetricsTieBreakers>
 </document>
