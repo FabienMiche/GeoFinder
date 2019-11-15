@@ -40,7 +40,7 @@
 
 /* Check */
 "titleCheck" = "Verification geocache";
-"label" = "Vous avez trouvez une geocache ? Pour en être sûr, entrez le code ci-dessous !";
+"label" = "Vous avez trouvé(e) une geocache ? Pour en être sûr, entrez le code ci-dessous !";
 
 /* Help */
 "titleHelp" = "Zone d'aide";
