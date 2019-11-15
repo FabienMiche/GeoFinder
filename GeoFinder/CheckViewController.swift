@@ -30,7 +30,7 @@ class CheckViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerD
         
         textField.delegate = self
 
-        titleView.text = NSLocalizedString("title", comment: "Check")
+        titleView.text = NSLocalizedString("titleCheck", comment: "Check")
         label.text = NSLocalizedString("label", comment: "Check")
         
         //Son : alert lorsqu'on secoue l'appareil

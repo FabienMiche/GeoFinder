@@ -39,13 +39,21 @@
 "messageExit" = "You're leaving the zone !";
 
 /* Check */
-"title" = "Check geocache";
+"titleCheck" = "Check geocache";
 "label" = "Find a geocache ? Make sure to enter the code below to prove it !";
 
 /* Help */
-"title" = "Help zone";
+"titleHelp" = "Help zone";
 "text" = "Can't find a geocache ? Make sure to report it below";
-"mess1" = "Error ! Please enter a message !";
-"mess2" = "Error ! Please enter a longer message !";
+"mess1" = "Error ! Please enter a message and a title!";
+"mess2" = "Error ! Please enter a longer message and title!";
 "mess3" = "Your message has been sended, we will help you soon !";
+"cancelBtn" = "Cancel";
+"confirmBtn" = "Confirm";
+"reportList" = "Reports list";
 
+/* Audio */
+"titleAudio" = "Audio player";
+"play" = "Play";
+"pause" = "Pause";
+"replay" = "Replay";

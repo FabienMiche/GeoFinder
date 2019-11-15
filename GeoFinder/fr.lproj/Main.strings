@@ -8,6 +8,9 @@
 /* Class = "UILabel"; text = "Latitude :"; ObjectID = "0ym-qC-Qgp"; */
 "0ym-qC-Qgp.text" = "Latitude :";
 
+/* Class = "UIButton"; normalTitle = "Return"; ObjectID = "4FK-QY-QEX"; */
+"4FK-QY-QEX.normalTitle" = "Retour";
+
 /* Class = "UILabel"; text = "Latitude :"; ObjectID = "9yX-Fr-4Sy"; */
 "9yX-Fr-4Sy.text" = "Latitude :";
 
@@ -29,6 +32,9 @@
 /* Class = "UIButton"; normalTitle = "Import image"; ObjectID = "Euh-eS-ekx"; */
 "Euh-eS-ekx.normalTitle" = "Importer une image";
 
+/* Class = "UIButton"; normalTitle = "Return"; ObjectID = "F7K-WG-Wlp"; */
+"F7K-WG-Wlp.normalTitle" = "Retour";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "Fb4-za-SWU"; */
 "Fb4-za-SWU.text" = "Label";
 
@@ -45,7 +51,7 @@
 "K9Y-Ol-uXc.text" = "Label";
 
 /* Class = "UILabel"; text = "Can't find a geocache ? Make sure to report it below  "; ObjectID = "KDq-7O-cnz"; */
-"KDq-7O-cnz.text" = "Vous ne trouvez pas la geocache ? Veuillez le signaler ci-dessous ";
+"KDq-7O-cnz.text" = "Vous ne trouvez pas la geocache ? Veuillez le signaler ci-dessous";
 
 /* Class = "UILabel"; text = "Help zone"; ObjectID = "KG5-mL-CbL"; */
 "KG5-mL-CbL.text" = "Zone d'aide";
@@ -66,10 +72,16 @@
 "QjQ-EL-5Xj.text" = "Latitude :";
 
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "QzV-Zc-b0S"; */
-"QzV-Zc-b0S.normalTitle" = "Retour";
+"QzV-Zc-b0S.normalTitle" = "Retourn";
 
 /* Class = "UILabel"; text = "Titre"; ObjectID = "TAn-9v-Eu9"; */
 "TAn-9v-Eu9.text" = "Titre";
+
+/* Class = "UIButton"; normalTitle = "Reports list"; ObjectID = "TnS-t0-iHb"; */
+"TnS-t0-iHb.normalTitle" = "Listes des rapports";
+
+/* Class = "UILabel"; text = "Message :"; ObjectID = "VFa-Aa-4gw"; */
+"VFa-Aa-4gw.text" = "Message :";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "Y5e-jU-8Ad"; */
 "Y5e-jU-8Ad.title" = "Item";
@@ -89,6 +101,9 @@
 /* Class = "UILabel"; text = "Photo :"; ObjectID = "dt6-Vu-CoP"; */
 "dt6-Vu-CoP.text" = "Photo :";
 
+/* Class = "UILabel"; text = "Label"; ObjectID = "eq1-nO-9jb"; */
+"eq1-nO-9jb.text" = "Label";
+
 /* Class = "UILabel"; text = "Check geocache "; ObjectID = "fVc-3T-D3f"; */
 "fVc-3T-D3f.text" = "Vérification geocache ";
 
@@ -98,8 +113,14 @@
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "hfs-G3-XCf"; */
 "hfs-G3-XCf.normalTitle" = "Valider";
 
+/* Class = "UILabel"; text = "Title :"; ObjectID = "kDF-gp-49f"; */
+"kDF-gp-49f.text" = "Titre :";
+
 /* Class = "UIBarButtonItem"; title = "Hybrid"; ObjectID = "oKY-zA-7H1"; */
 "oKY-zA-7H1.title" = "Hybrid";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "vVr-9q-WxS"; */
 "vVr-9q-WxS.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zrd-gt-fuC"; */
+"zrd-gt-fuC.text" = "Label";
