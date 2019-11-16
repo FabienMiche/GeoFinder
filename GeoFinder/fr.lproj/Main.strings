@@ -42,7 +42,7 @@
 "Gc9-K9-oEa.title" = "Standard";
 
 /* Class = "UIButton"; normalTitle = "???"; ObjectID = "J1C-qk-4hm"; */
-"J1C-qk-4hm.normalTitle" = "???";
+"J1C-qk-4hm.normalTitle" = "Description";
 
 /* Class = "UILabel"; text = "Description:"; ObjectID = "JWc-2U-uNw"; */
 "JWc-2U-uNw.text" = "Description:";
