@@ -329,10 +329,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L1T-XZ-Cc1">
-                                <rect key="frame" x="0.0" y="44" width="375" height="535"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="530"/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28J-V9-LII">
-                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="574" width="375" height="49"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="E2y-ii-i3T"/>
                                     <barButtonItem title="WAI" id="ZQ3-0e-3WH">
@@ -880,7 +880,7 @@
                                     <action selector="importBtn:" destination="L0c-ZZ-rO3" eventType="touchUpInside" id="kxJ-MY-jiR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cadre.png" translatesAutoresizingMaskIntoConstraints="NO" id="muj-aG-hjN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cadre.png" translatesAutoresizingMaskIntoConstraints="NO" id="YIz-c4-E8q">
                                 <rect key="frame" x="195" y="402" width="171" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
