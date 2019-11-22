@@ -9,6 +9,12 @@
 import UIKit
 import AVFoundation
 
+/*
+ * Classe pour vérifier le code d'une geocache
+ * On compare la valeur saisie à la valeur du tableau
+ * Si les valeurs sont identiques, on affiche une alerte de succès
+ */
+
 class CheckViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelegate {
 
     @IBOutlet weak var titleView: UILabel!
@@ -46,7 +52,6 @@ class CheckViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerD
             }
         }
         //********
-        // Do any additional setup after loading the view.
     }
     
     
@@ -99,15 +104,4 @@ class CheckViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerD
     }
 
     //*************
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

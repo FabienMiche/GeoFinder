@@ -58,3 +58,6 @@
 "pause" = "Pause";
 "replay" = "Rejouer";
 
+/* Add */
+"err1" = "Erreur ! veuillez remplir tous les champs !";
+"success" = "Geocache ajouté !";

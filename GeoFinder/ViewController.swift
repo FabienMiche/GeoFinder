@@ -42,8 +42,35 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         //********
+        
     }
     
+    //Pour stocker les données de façons permanente
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.object(forKey: "geoList") as? [String] != nil {
+            geoList = UserDefaults.standard.object(forKey: "geoList") as? [String] ?? [String]()
+        }
+        
+        if UserDefaults.standard.object(forKey: "geoLat") as? [Double] != nil {
+            geoLatitude = UserDefaults.standard.object(forKey: "geoLat") as? [Double] ?? [Double]()
+        }
+        
+        if UserDefaults.standard.object(forKey: "geoLong") as? [Double] != nil {
+            geoLongitude = UserDefaults.standard.object(forKey: "geoLong") as? [Double] ?? [Double]()
+        }
+        
+        if UserDefaults.standard.object(forKey: "geoProxLat") as? [Double] != nil {
+            geoProxiLatitude = UserDefaults.standard.object(forKey: "geoProxLat") as? [Double] ?? [Double]()
+        }
+        
+        if UserDefaults.standard.object(forKey: "geoProxLong") as? [Double] != nil {
+            geoProxiLongitude = UserDefaults.standard.object(forKey: "geoProxLong") as? [Double] ?? [Double]()
+        }
+        
+        if UserDefaults.standard.object(forKey: "geoInfo") as? [String] != nil {
+            geoInfo = UserDefaults.standard.object(forKey: "geoInfo") as? [String] ?? [String]()
+        }
+    }
     
     //*************
     //Fonction pour la détection du mouvement du téléphone
@@ -55,29 +82,27 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake
         {
-            /*
-            let alertController = UIAlertController(title: nil, message:
-                "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
-            
-            self.present(alertController, animated: true, completion: nil)
-            */
             performSegue(withIdentifier: "menuSeg", sender: self)
             alertAudio.play()
-
-            
         }
     }
 
     //*************
+    /*
+    * Utilisation de UserDefaults pour le stockage des données
+    * Ici, lorsque l'utilisateur supprime un élément
+    * on supprime toutes les valeurs qui lui sont associées
+    * c'est-à-dire on passe par tous les tableaux
+    * et supprime chaque élément correspondant
+    */
     @IBAction func startBtn(_ sender: Any) {
+        UserDefaults.standard.set(geoList, forKey: "geoList")
+        UserDefaults.standard.set(geoLatitude, forKey: "geoLat")
+        UserDefaults.standard.set(geoLongitude, forKey: "geoLong")
+        UserDefaults.standard.set(geoProxiLatitude, forKey: "geoProxLat")
+        UserDefaults.standard.set(geoProxiLongitude, forKey: "geoProxLong")
+        UserDefaults.standard.set(geoInfo, forKey: "geoInfo")
         startAudio.play()
     }
-    
-    @IBAction func descriptionBtn(_ sender: Any) {
-    }
-    
-    
-
 }
 

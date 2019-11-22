@@ -57,3 +57,8 @@
 "play" = "Play";
 "pause" = "Pause";
 "replay" = "Replay";
+
+
+/* Add */
+"err1" = "Error ! please complete all forms !";
+"success" = "Geocache added !";

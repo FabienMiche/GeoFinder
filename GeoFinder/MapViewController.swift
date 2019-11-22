@@ -7,14 +7,16 @@
 //
 
 import UIKit
-import MapKit
-import CoreLocation
-import AVFoundation
+import MapKit           //Import pour la carte
+import CoreLocation     //Import pour la position geographique
+import AVFoundation     //Import pour la gestion des sons
 
 
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, AVAudioPlayerDelegate {
-
+    
+    //**** AFFICHAGE DE LA CARTE ****
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var latitudeText: UILabel!
     @IBOutlet weak var longitudeText: UILabel!
@@ -55,14 +57,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             
             //locationManager.requestWhenInUseAuthorization()
             locationManager.requestAlwaysAuthorization()
-            //locationManager.startMonitoring(for: region)    //Pour la zone de proximité
-            locationManager.startMonitoring(for: geo)      //Pour la zone de la geocache
+            locationManager.startMonitoring(for: geo)           //Pour la zone de proximité de la geocache
             
             locationManager.startUpdatingLocation()
             
-            mapView.showsUserLocation = true
+            mapView.showsUserLocation = true                    //On récupère la position de l'utilisateur
             
         } else {
+            //Gestion des erreurs si on arrive pas à récupérer la position de l'utilisateur
             let alert = UIAlertController(title: NSLocalizedString("error", comment: "Error"),
                                           message: NSLocalizedString("location not enabled", comment: "Error"),
                                           preferredStyle: .alert)
@@ -72,6 +74,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         //**** Chargement des fichiers sons ****
         //Son : Alerte de proximité
+        //On teste l'existence du fichier source
         if let soundFilePath = Bundle.main.path(forResource: "alertProximité", ofType: "wav") {
             let fileURL = URL(fileURLWithPath: soundFilePath)
             do {
@@ -97,7 +100,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             }
         }
         //********
-        // Do any additional setup after loading the view.
         
     }
     
@@ -112,8 +114,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     
     //**** Alerte de proximité des geocaches ****
-    //ENTRÉE GEO1
-    
+    //ENTRÉE DANS LA ZONE DE PROXIMITÉ
+    //Un son est joué et une alerte s'affiche pour prévenir l'utilisateur
     func locationManager(_ manager: CLLocationManager, didEnterRegion geo1: CLRegion) {
         print("Entrée dans la zone de %@", geo1)
         let alertController = UIAlertController(title: NSLocalizedString("alert", comment: "Zone"), message: NSLocalizedString("messageEnter", comment: "Error"), preferredStyle: .alert)
@@ -123,7 +125,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
 
     
-    //SORTIE GEO1
+    //SORTIE DE LA ZONE DE PROXIMITÉ
     func locationManager(_ manager: CLLocationManager, didExitRegion geo1: CLRegion) {
         print("Sortie de la zone %@", geo1)
         let alertController = UIAlertController(title: NSLocalizedString("alert", comment: "Zone"), message: NSLocalizedString("messageExit", comment: "Zone"), preferredStyle: .alert)
@@ -135,13 +137,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     //********
     
+    //Bouton pour zoomer sur la position actuel de l'utilisateur
     @IBAction func whereAmI(_ sender: Any) {
         let userLocation = mapView.userLocation
         let region = MKCoordinateRegion(center: (userLocation.location?.coordinate)!,latitudinalMeters: 2000,longitudinalMeters: 2000)
         mapView.setRegion(region, animated: true)
     }
     
-    
+    //********
+    //Différents types d'affichage de la carte
     @IBAction func standard(_ sender: Any) {
         mapView.mapType = .standard
     }
@@ -153,6 +157,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBAction func hybrid(_ sender: Any) {
         mapView.mapType = .hybrid
     }
+    
+    //********
     
     
     
@@ -184,26 +190,20 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         if motion == .motionShake
         {
             /*
+             Ancien test : affichage d'un simple message
             let alertController = UIAlertController(title: nil, message:
                 "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
             */
+            
+            /*
+             * Lorsqu'on secoue l'appareil on fait appel au view controller avec l'identifiant attribué
+             * depuis le Main.storyboard, ici "mapSegue"
+            */
             performSegue(withIdentifier: "mapSegue", sender: self)
             alertAudio.play()
         }
     }
-    
-    //*************
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

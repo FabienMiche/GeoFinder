@@ -15,6 +15,7 @@
 		5F3713D523800EA600861A24 /* Back_liste.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3713D423800EA500861A24 /* Back_liste.png */; };
 		5F3713D723800F1300861A24 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3713D623800F1300861A24 /* Info.png */; };
 		5F3713D923800FCF00861A24 /* cadre.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3713D823800FCF00861A24 /* cadre.png */; };
+		5F3E3CB3238667870096B1A8 /* AddGeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E3CB2238667870096B1A8 /* AddGeoViewController.swift */; };
 		5F44E9B92377FE20009FB1A0 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F44E9B82377FE20009FB1A0 /* alert.mp3 */; };
 		5F44E9BC23784A0B009FB1A0 /* upheavtt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F44E9BB237849E8009FB1A0 /* upheavtt.ttf */; };
 		5F4929AF237D14C700FB3720 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4929AE237D14C700FB3720 /* HelpViewController.swift */; };
@@ -74,6 +75,7 @@
 		5F3713D423800EA500861A24 /* Back_liste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back_liste.png; sourceTree = "<group>"; };
 		5F3713D623800F1300861A24 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
 		5F3713D823800FCF00861A24 /* cadre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cadre.png; sourceTree = "<group>"; };
+		5F3E3CB2238667870096B1A8 /* AddGeoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGeoViewController.swift; sourceTree = "<group>"; };
 		5F44E9B82377FE20009FB1A0 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
 		5F44E9BB237849E8009FB1A0 /* upheavtt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = upheavtt.ttf; path = ../../../../../../../../../Library/Fonts/upheavtt.ttf; sourceTree = "<group>"; };
 		5F4929AE237D14C700FB3720 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				5F4929AE237D14C700FB3720 /* HelpViewController.swift */,
 				5FB7A0F5237DD06600A9609B /* HelpListViewController.swift */,
 				5FB7A0F7237DD7AB00A9609B /* AffichageHelpListViewController.swift */,
+				5F3E3CB2238667870096B1A8 /* AddGeoViewController.swift */,
 				5F007082237E6C59007FCDB4 /* Music */,
 				5FEB47E82379DDDD00686F71 /* Images */,
 				5F6CB82D2376CD32002A420C /* Sounds */,
@@ -425,6 +428,7 @@
 				5F32DFAF23703B9200C65FAD /* AffichageList.swift in Sources */,
 				5FE8F391236D96AC00E628FA /* SceneDelegate.swift in Sources */,
 				5FB7A0F8237DD7AB00A9609B /* AffichageHelpListViewController.swift in Sources */,
+				5F3E3CB3238667870096B1A8 /* AddGeoViewController.swift in Sources */,
 				5F4929AF237D14C700FB3720 /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

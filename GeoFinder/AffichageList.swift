@@ -7,11 +7,19 @@
 //
 
 import UIKit
-import AVFoundation
+import AVFoundation     //Import pour la gestion des sons 
+
+/*
+ * Classe pour l'affichage des informations d'un objet
+ * qu'on aura sélectionné dans la liste
+ * Les informations sont récupérées depuis les tableaux de la classe "ListTableViewController"
+*/
 
 
 class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVAudioPlayerDelegate  {
-
+    
+    //Variables qui vont servir d'affichage dans le Main.storyboard
+    
     @IBOutlet weak var geoTitre: UILabel!
     @IBOutlet weak var geoLat: UILabel!
     @IBOutlet weak var geoLong: UILabel!
@@ -26,7 +34,10 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        /*
+         * On récupère les valeurs des différents tableaux grâce à la variable myIndex
+         * Les données sont récupérées et affichées dans les champs correspondants
+         */
         geoTitre.text = geoList[myIndex]
         geoLat.text = String(geoLatitude[myIndex])
         geoLong.text = String(geoLongitude[myIndex])
@@ -51,13 +62,20 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
         //********
     }
     
+    /*
+     * Action lorsqu'on appuie sur le bouton "importer"
+     * qui offre la possibilité d'importer des photos depuis sa bibliothèque
+     * ou bien d'en prendre une grâce à l'appareil (non fonctionnel sur les émulateurs)
+     */
     @IBAction func importBtn(_ sender: Any) {
         
-        let imagePickerController = UIImagePickerController()
+        let imagePickerController = UIImagePickerController()   //Variable qui permet de dire qu'on utilisera l'appareil photo
         imagePickerController.delegate = self
         
+        //****** On définit des messages personnalisés ******
         let actionSheet = UIAlertController(title: NSLocalizedString("photoSource", comment: "Photo"), message: NSLocalizedString("message", comment: "Photo"), preferredStyle: .actionSheet)
         
+        //Il faut vérifier si la camera est disponible ou non
         actionSheet.addAction(UIAlertAction(title: NSLocalizedString("camera", comment: "Photo"), style: .default, handler: { (action:UIAlertAction)in
             
             if UIImagePickerController.isSourceTypeAvailable(.camera){
@@ -68,7 +86,8 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
             }
 
         }))
-        
+        //******
+        // Choix d'importer ou de prendre une photo
         actionSheet.addAction(UIAlertAction(title: NSLocalizedString("library", comment: "Photo"), style: .default, handler: { (action:UIAlertAction)in
             imagePickerController.sourceType = .photoLibrary
             self.present(imagePickerController, animated: true, completion: nil )
@@ -79,6 +98,10 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
         self.present(actionSheet, animated: true, completion: nil)
     }
     
+    /*
+     * On récupère la photo prise ou sélectionnée
+     * et on l'affiche dans l'imageView du Main.storyboard
+     */
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as!UIImage
         
@@ -102,27 +125,11 @@ class AffichageList: UIViewController, UIImagePickerControllerDelegate, UINaviga
         if motion == .motionShake
         {
             /*
-            let alertController = UIAlertController(title: nil, message:
-                "C'est bien ça marche :D", preferredStyle: UIAlertController.Style.alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
-            
-            self.present(alertController, animated: true, completion: nil)
+            * Lorsqu'on secoue l'appareil on fait appel au view controller avec l'identifiant attribué
+            * depuis le Main.storyboard, ici "mapSegue"
             */
             performSegue(withIdentifier: "affichageSegue", sender: self)
             alertAudio.play()
         }
     }
-
-    //*************
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
