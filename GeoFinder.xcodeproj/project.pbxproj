@@ -66,7 +66,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F00707F237E60CB007FCDB4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		5F007083237E6C62007FCDB4 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		5F118F03237E7D8700D089B8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5F229DB82379EFD600F34A25 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		5F7ACA09236F5032001296D3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5F7ACA0A236F5032001296D3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = GeoFinder/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F7ACA0B236F52C7001296D3 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		5FAC60DA238800FD009E9EAF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		5FB7A0F5237DD06600A9609B /* HelpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListViewController.swift; sourceTree = "<group>"; };
 		5FB7A0F7237DD7AB00A9609B /* AffichageHelpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffichageHelpListViewController.swift; sourceTree = "<group>"; };
 		5FE8F38B236D96AC00E628FA /* GeoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -478,7 +478,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5FE8F395236D96AC00E628FA /* Base */,
-				5F00707F237E60CB007FCDB4 /* fr */,
+				5FAC60DA238800FD009E9EAF /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

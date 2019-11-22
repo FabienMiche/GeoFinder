@@ -2,7 +2,7 @@
 /* Class = "UILabel"; text = "Longitude :"; ObjectID = "0PD-7A-IHI"; */
 "0PD-7A-IHI.text" = "Longitude :";
 
-/* Class = "UILabel"; text = "Proximity zone"; ObjectID = "0hZ-56-IEZ"; */
+/* Class = "UILabel"; text = "Zone de proximité"; ObjectID = "0hZ-56-IEZ"; */
 "0hZ-56-IEZ.text" = "Zone de proximité";
 
 /* Class = "UILabel"; text = "Latitude :"; ObjectID = "0ym-qC-Qgp"; */
@@ -41,8 +41,8 @@
 /* Class = "UIBarButtonItem"; title = "Standard"; ObjectID = "Gc9-K9-oEa"; */
 "Gc9-K9-oEa.title" = "Standard";
 
-/* Class = "UIButton"; normalTitle = "???"; ObjectID = "J1C-qk-4hm"; */
-"J1C-qk-4hm.normalTitle" = "Description";
+/* Class = "UILabel"; text = "longitude :"; ObjectID = "IZm-wr-oUT"; */
+"IZm-wr-oUT.text" = "longitude :";
 
 /* Class = "UILabel"; text = "Description:"; ObjectID = "JWc-2U-uNw"; */
 "JWc-2U-uNw.text" = "Description:";
@@ -65,6 +65,12 @@
 /* Class = "UILabel"; text = "Longitude :"; ObjectID = "ODo-3e-Ocz"; */
 "ODo-3e-Ocz.text" = "Longitude :";
 
+/* Class = "UILabel"; text = "latitude :"; ObjectID = "Ozo-9N-Vh5"; */
+"Ozo-9N-Vh5.text" = "latitude :";
+
+/* Class = "UIButton"; normalTitle = "cancel"; ObjectID = "P9h-De-l8q"; */
+"P9h-De-l8q.normalTitle" = "Retour";
+
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "Phm-13-2O6"; */
 "Phm-13-2O6.title" = "Item";
 
@@ -72,13 +78,13 @@
 "QjQ-EL-5Xj.text" = "Latitude :";
 
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "QzV-Zc-b0S"; */
-"QzV-Zc-b0S.normalTitle" = "Retourn";
+"QzV-Zc-b0S.normalTitle" = "Retour";
 
 /* Class = "UILabel"; text = "Titre"; ObjectID = "TAn-9v-Eu9"; */
 "TAn-9v-Eu9.text" = "Titre";
 
 /* Class = "UIButton"; normalTitle = "Reports list"; ObjectID = "TnS-t0-iHb"; */
-"TnS-t0-iHb.normalTitle" = "Listes des rapports";
+"TnS-t0-iHb.normalTitle" = "Liste des rapports";
 
 /* Class = "UILabel"; text = "Message :"; ObjectID = "VFa-Aa-4gw"; */
 "VFa-Aa-4gw.text" = "Message :";
@@ -95,6 +101,12 @@
 /* Class = "UILabel"; text = "Label"; ObjectID = "bY9-nj-VP6"; */
 "bY9-nj-VP6.text" = "Label";
 
+/* Class = "UIButton"; normalTitle = "Play"; ObjectID = "bcG-JH-dW7"; */
+"bcG-JH-dW7.normalTitle" = "Lecture";
+
+/* Class = "UILabel"; text = "Name :"; ObjectID = "bcm-nn-u7B"; */
+"bcm-nn-u7B.text" = "Nom :";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "ckC-R8-nGn"; */
 "ckC-R8-nGn.text" = "Label";
 
@@ -104,23 +116,53 @@
 /* Class = "UILabel"; text = "Label"; ObjectID = "eq1-nO-9jb"; */
 "eq1-nO-9jb.text" = "Label";
 
-/* Class = "UILabel"; text = "Check geocache "; ObjectID = "fVc-3T-D3f"; */
-"fVc-3T-D3f.text" = "Vérification geocache ";
+/* Class = "UILabel"; text = "add geocache"; ObjectID = "f9E-yp-Z0G"; */
+"f9E-yp-Z0G.text" = "Ajout geocache";
+
+/* Class = "UILabel"; text = "check geocache"; ObjectID = "fVc-3T-D3f"; */
+"fVc-3T-D3f.text" = "Verification geocache";
 
 /* Class = "UIBarButtonItem"; title = "Satellite"; ObjectID = "gJ3-bN-nvB"; */
 "gJ3-bN-nvB.title" = "Satellite";
 
+/* Class = "UIButton"; normalTitle = "replay"; ObjectID = "hNS-nA-dgB"; */
+"hNS-nA-dgB.normalTitle" = "Relancer";
+
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "hfs-G3-XCf"; */
 "hfs-G3-XCf.normalTitle" = "Valider";
+
+/* Class = "UIButton"; normalTitle = "confirm"; ObjectID = "iMs-8x-Byn"; */
+"iMs-8x-Byn.normalTitle" = "Valider";
 
 /* Class = "UILabel"; text = "Title :"; ObjectID = "kDF-gp-49f"; */
 "kDF-gp-49f.text" = "Titre :";
 
+/* Class = "UILabel"; text = "proximity zone"; ObjectID = "lOO-W5-ex2"; */
+"lOO-W5-ex2.text" = "Zone de proximité";
+
 /* Class = "UIBarButtonItem"; title = "Hybrid"; ObjectID = "oKY-zA-7H1"; */
 "oKY-zA-7H1.title" = "Hybrid";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "pEN-Mv-VXj"; */
+"pEN-Mv-VXj.normalTitle" = "Ajouter";
+
+/* Class = "UIButton"; normalTitle = "Pause"; ObjectID = "q6c-lS-Gct"; */
+"q6c-lS-Gct.normalTitle" = "Pause";
+
+/* Class = "UILabel"; text = "longitude :"; ObjectID = "rkN-40-svb"; */
+"rkN-40-svb.text" = "longitude :";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "vVr-9q-WxS"; */
 "vVr-9q-WxS.text" = "Label";
 
+/* Class = "UILabel"; text = "Description :"; ObjectID = "yb8-dQ-RGu"; */
+"yb8-dQ-RGu.text" = "Description :";
+
+/* Class = "UILabel"; text = "latitude :"; ObjectID = "zOX-qc-d8L"; */
+"zOX-qc-d8L.text" = "latitude :";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "zrd-gt-fuC"; */
 "zrd-gt-fuC.text" = "Label";
+
+/* Class = "UILabel"; text = "Audio player"; ObjectID = "zwf-hA-cBx"; */
+"zwf-hA-cBx.text" = "Lecteur audio";
